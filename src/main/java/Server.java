@@ -7,7 +7,7 @@ public class Server {
     private static final int PORT = 1890;
     public static void main(String[] args) {
         try {
-            ServerSocket serverSocket = new ServerSocket(1488);
+            ServerSocket serverSocket = new ServerSocket(PORT);
             while(true){
                 Socket connected = serverSocket.accept();
                 System.out.println("Someone has been connected!");
